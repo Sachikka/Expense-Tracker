@@ -1307,25 +1307,28 @@ elif page == "Smart Recommendations":
             st.subheader("Your Spending Breakdown")
 
             st.bar_chart(category_totals)
-
+            
             # PERSONALIZED SUGGESTIONS
 
             st.subheader("💜 Personalized Suggestions")
 
-            st.markdown("""
-            <style>
-            .recommendation-box {
-                background-color: #F3E8FF;
-                color: #2E104D !important;
-                padding: 18px;
-                border-radius: 12px;
-                border: 2px solid #C084FC;
-                font-size: 16px;
-                font-weight: 600;
-                margin-bottom: 12px;
-            }
-            </style>
-            """, unsafe_allow_html=True)
+            st.markdown(
+                """
+                <style>
+                .recommendation-box {
+                    background-color: #F3E8FF;
+                    color: #2E104D !important;
+                    padding: 18px;
+                    border-radius: 12px;
+                    border: 2px solid #C084FC;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+                </style>
+                """,
+                unsafe_allow_html=True
+            )
 
             st.markdown(
                 f'<div class="recommendation-box">'
@@ -1337,14 +1340,11 @@ elif page == "Smart Recommendations":
             )
 
             if highest_amount / total >= 0.40:
-
                 suggestion = (
                     f"You are spending more than 40% of your money "
                     f"on {highest_category}. Try reducing this category."
                 )
-
             else:
-
                 suggestion = (
                     "Your spending is distributed across different categories."
                 )
@@ -1367,13 +1367,10 @@ elif page == "Smart Recommendations":
             )
 
             if average > 500:
-
                 average_suggestion = (
                     "Consider reviewing larger purchases before spending."
                 )
-
             else:
-
                 average_suggestion = (
                     "Your average transaction amount is relatively low."
                 )
@@ -1384,6 +1381,8 @@ elif page == "Smart Recommendations":
                 f'</div>',
                 unsafe_allow_html=True
             )
+
+
 # ==========================================
 # SAVINGS GOALS
 # ==========================================
