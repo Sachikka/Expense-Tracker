@@ -818,19 +818,22 @@ elif page == "Transactions":
                 "confirm_delete_id"
             ) == int(selected_id):
 
-                st.markdown("""
-<div style="
-    background-color: #ffe0e0;
-    color: #991b1b;
-    padding: 15px;
-    border: 2px solid #dc2626;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 800;
-">
-    ⚠️ Are you sure you want to delete this expense?
-</div>
-""", unsafe_allow_html=True)
+                st.markdown(
+                    '''
+                    <div style="
+                        background-color: #fff0e0;
+                        color: #991b1b;
+                        padding: 15px;
+                        border: 2px solid #dc2626;
+                        border-radius: 10px;
+                        font-size: 17px;
+                        font-weight: 800;
+                    ">
+                        ⚠️ Are you sure you want to delete this expense?
+                    </div>
+                    ''',
+                    unsafe_allow_html=True
+                )
 
                 yes_col, no_col = st.columns(2)
 
