@@ -447,8 +447,9 @@ if st.session_state.get("expenseease_flash"):
 
     flash_message = st.session_state.pop("expenseease_flash")
 
+   
     st.markdown(
-        f"""
+        f'''
         <div style="
             background-color: #d1fae5;
             color: #065f46;
@@ -461,9 +462,10 @@ if st.session_state.get("expenseease_flash"):
         ">
             ✅ {flash_message}
         </div>
-        """,
+        ''',
         unsafe_allow_html=True
     )
+
 # ==========================================
 # DASHBOARD
 # ==========================================
