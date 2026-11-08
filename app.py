@@ -1313,22 +1313,22 @@ elif page == "Smart Recommendations":
             st.subheader("💜 Personalized Suggestions")
 
             st.markdown(
-                """
-                <style>
-                .recommendation-box {
-                    background-color: #F3E8FF;
-                    color: #2E104D !important;
-                    padding: 18px;
-                    border-radius: 12px;
-                    border: 2px solid #C084FC;
-                    font-size: 16px;
-                    font-weight: 600;
-                    margin-bottom: 12px;
-                }
-                </style>
-                """,
-                unsafe_allow_html=True
-            )
+    """
+    <style>
+    .recommendation-box {
+        background-color: #F3E8FF;
+        color: #2E104D !important;
+        padding: 18px;
+        border-radius: 12px;
+        border: 2px solid #C084FC;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
             st.markdown(
                 f'<div class="recommendation-box">'
